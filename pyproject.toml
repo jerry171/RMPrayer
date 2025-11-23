@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rmprayer"
+version = "0.1.0"
+description = "Desktop utility scaffold for the RMPrayer project"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "RMPrayer Team" }
+]
+dependencies = [
+    "PyQt6>=6.6",
+    "reportlab>=4.0",
+    "tinydb>=4.8",
+    "paramiko>=3.4",
+]
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller>=6.3",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
