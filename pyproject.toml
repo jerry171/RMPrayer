@@ -1,0 +1,11 @@
+[project]
+name = "prayer-tracker"
+version = "0.1.0"
+description = "Prayer tracking data layer with persistence and scheduling"
+authors = ["Prayer Tracker Contributors"]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
